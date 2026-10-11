@@ -1,0 +1,49 @@
+<div class="tagdesc-settings">
+    <div class="inline-drawer">
+        <div class="inline-drawer-toggle inline-drawer-header">
+            <b>Tag Description Generator</b>
+            <div class="inline-drawer-icon fa-solid fa-circle-chevron-down down"></div>
+        </div>
+        <div class="inline-drawer-content">
+            <small>Describes your character with Danbooru tags, grouped by category. Enabled categories are merged into one image prompt.</small>
+
+            <label for="tagdesc_prefix">Prompt prefix</label>
+            <input id="tagdesc_prefix" class="text_pole" type="text" placeholder="e.g. solo, 1boy" />
+
+            <label for="tagdesc_suffix">Prompt suffix</label>
+            <input id="tagdesc_suffix" class="text_pole" type="text" placeholder="e.g. masterpiece, best quality" />
+
+            <label class="checkbox_label" for="tagdesc_underscores">
+                <input id="tagdesc_underscores" type="checkbox" />
+                <span>Replace underscores with spaces in the final prompt</span>
+            </label>
+
+            <label class="checkbox_label" for="tagdesc_confirm">
+                <input id="tagdesc_confirm" type="checkbox" />
+                <span>Show and edit the prompt before generating</span>
+            </label>
+
+            <label class="checkbox_label" for="tagdesc_review">
+                <input id="tagdesc_review" type="checkbox" />
+                <span>Review AI auto-fill results before applying</span>
+            </label>
+
+            <hr class="sysHR" />
+
+            <b>Tag categories</b>
+            <div id="tagdesc_settings_list" class="tagdesc-list"></div>
+
+            <div class="flex-container">
+                <div id="tagdesc_add_category" class="menu_button menu_button_icon">
+                    <i class="fa-solid fa-plus"></i><span>Add category</span>
+                </div>
+                <div id="tagdesc_open_manager" class="menu_button menu_button_icon">
+                    <i class="fa-solid fa-tags"></i><span>Open tag manager</span>
+                </div>
+                <div id="tagdesc_reset" class="menu_button menu_button_icon">
+                    <i class="fa-solid fa-rotate-left"></i><span>Reset to defaults</span>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

@@ -1,1 +1,82 @@
-/* All style elements for your extension go here */
+.tagdesc-list {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    margin: 5px 0;
+}
+
+.tagdesc-row {
+    display: flex;
+    flex-direction: column;
+    gap: 3px;
+    padding: 5px;
+    border: 1px solid var(--SmartThemeBorderColor);
+    border-radius: 5px;
+}
+
+.tagdesc-row.tagdesc-disabled {
+    opacity: 0.5;
+}
+
+.tagdesc-row-header {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.tagdesc-row-name {
+    flex: 1;
+    font-weight: bold;
+    text-align: left;
+}
+
+.tagdesc-row-actions {
+    display: flex;
+    gap: 2px;
+}
+
+.tagdesc-row-actions .menu_button {
+    margin: 0;
+    padding: 3px 6px;
+}
+
+.tagdesc-row-preview {
+    text-align: left;
+    opacity: 0.8;
+    word-break: break-word;
+}
+
+.tagdesc-tags {
+    margin: 0;
+}
+
+.tagdesc-manager,
+.tagdesc-editor,
+.tagdesc-review {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    text-align: left;
+}
+
+.tagdesc-prompt-preview {
+    padding: 5px;
+    border: 1px dashed var(--SmartThemeBorderColor);
+    border-radius: 5px;
+    font-family: var(--monoFontFamily, monospace);
+    word-break: break-word;
+}
+
+.tagdesc-review-row {
+    display: flex;
+    flex-direction: column;
+    gap: 3px;
+    padding-bottom: 5px;
+    border-bottom: 1px solid var(--SmartThemeBorderColor);
+}
+
+.tagdesc-review-old {
+    opacity: 0.6;
+    text-decoration: line-through;
+    word-break: break-word;
+}
